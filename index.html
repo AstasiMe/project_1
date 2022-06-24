@@ -4,9 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="assest/img/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f0b0fdd35.js" crossorigin="anonymous"></script>
+    <title>Educrown</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    
+    <header id="home">
+
+        <div class="header-top-area">
+            <nav class="navbar">
+                <div class="container flex-sides">
+                    <div class="nav-logo">
+                        <a href="#home" class="nav-brand"><img src="/img/logo.png" alt="logo"></a>
+                    </div>
+                    <div id="main-nav" class="main-nav">
+                        <ul id="nav" class="nav flex-sides">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#courses">Courses</a></li>
+                            <li><a href="#testmonial">Testmonial</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#faqs">Faqs</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="welcome-slider-area">
+        
+            <div class="welcome-single-slide">
+                <div class="shadow">
+                    <div class="welcome-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="welcome-text white">
+                                        <h1>Develop a passion for learning new things.</h1>
+                                        <p class="white">Was certainty remaining engrossed applauded sir how discovery. Settled opinion how enjoyed greater joy adapted too shy. Now properly surprise expenses.</p>
+                                        <div class="home-button">
+                                            <form action="#">
+                                                <input type="search" name="search" id="search" placeholder="Search Courses">
+                                                <button type="submit"><i class="fa-solid fa-magnifying-glass white"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- для слайдера еще фото -->
+
+        </div>
+
+    </header>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="row promo-content">
+                <div class="col-md-4 features-item">
+                    <div class="box-icon features-box-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="h3-title">Certificate</h3>
+                    <p class="p-content">A Google Docs scam that appears to be widespread began landing in Wednesday in what seemed to be a phishing attack.</p>
+                </div>
+                <div class="col-md-4 features-item">
+                    <div class="box-icon features-box-icon">
+                        <i class="fa-solid fa-user-large"></i>
+                    </div>
+                    <h3 class="h3-title">Expert Instructors</h3>
+                    <p class="p-content">A Google Docs scam that appears to be widespread began landing in Wednesday in what seemed to be a phishing attack.</p>
+                </div>
+                <div class="col-md-4 features-item">
+                    <div class="box-icon features-box-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 class="h3-title">Learn from anywhere</h3>
+                    <p class="p-content">A Google Docs scam that appears to be widespread began landing in Wednesday in what seemed to be a phishing attack.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="info-section">
+        <div class="container">
+            <div class="info-content">
+                <h2 class="h2-title">Educrown is trusted by 50,000+ student.</h2>
+                <p class="p-content">Microsoft has spent a lot of time trying to make Windows self-repairing, partly because it generally gets the blame when other programs or users try to improve” it. Given that tens of thousands of expert programmers have worked on the code over the past 30 years.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="facts-area" class="facts-area white">
+        <div class="facts-area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 fact-wrap">
+                        <h3 class="fact-title">20k</h3>
+                        <p class="p-facts">Books in our library</p>
+                    </div>
+                    <div class="col-md-3 fact-wrap">
+                        <h3 class="fact-title">124</h3>
+                        <p class="p-facts">Books in our library</p>
+                    </div>
+                    <div class="col-md-3 fact-wrap">
+                        <h3 class="fact-title">600k</h3>
+                        <p class="p-facts">Books in our library</p>
+                    </div>
+                    <div class="col-md-3 fact-wrap">
+                        <h3 class="fact-title">15k</h3>
+                        <p class="p-facts">Books in our library</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <div class="container-full">
+            <div class="courses-title">
+                <h2 class="h2-title">Our Trending Courses</h2>
+            </div>
+            <div class="row course-list">
+                <div class="col-md-4">
+                    <div class="course-item">
+                        <img src="/img/courses/surface-E9NcsvbRVqo-unsplash.jpg" alt="">
+                        <div class="title-wrap">
+                            <h3 class="h3-title">The Art and Practice of Leadership</h3>
+                            <p class="p-content">MPs who are leaving the protection of for the campaign trail will render...</p>
+                            <div class="price-wrap">
+                                <a href="#">Enroll the Courses</a>
+                                <span>$29.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course-item">
+                        <img src="/img/courses/surface-E9NcsvbRVqo-unsplash.jpg" alt="">
+                        <div class="title-wrap">
+                            <h3 class="h3-title">The Art and Practice of Leadership</h3>
+                            <p class="p-content">MPs who are leaving the protection of for the campaign trail will render...</p>
+                            <div class="price-wrap">
+                                <a href="#">Enroll the Courses</a>
+                                <span>$29.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course-item">
+                        <img src="/img/courses/surface-E9NcsvbRVqo-unsplash.jpg" alt="">
+                        <div class="title-wrap">
+                            <h3 class="h3-title">The Art and Practice of Leadership</h3>
+                            <p class="p-content">MPs who are leaving the protection of for the campaign trail will render...</p>
+                            <div class="price-wrap">
+                                <a href="#">Enroll the Courses</a>
+                                <span>$29.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
