@@ -498,3 +498,126 @@ a {
     padding-right: 8px;
     color: white;
 }
+
+/* АДАПТИВ --------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 900px){
+    .welcome-area {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .welcome-text h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+    .welcome-text p {
+        text-align: center;
+        padding: 0;
+    }
+    .home-button form {
+        width: 100%;
+    }
+    
+    .promo-content {
+        padding: 30px 20px;
+    }
+    .row .features-item {
+        margin-bottom: 0;
+    }
+    .features-box-icon {
+        margin-bottom: 20px;
+    }
+    
+    .info-content {
+        padding: 50px 13px;
+    }
+    .info-section h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    
+    .facts-area-padding {
+        padding: 50px 0;
+    }
+    .facts-area-padding h3 {
+        font-size: 40px;
+    }
+    
+    .courses {
+        padding: 50px 13px 0 13px;
+    }
+    
+    .video-section {
+        padding: 50px 13px;
+    }
+    
+    .testmonial {
+        padding: 50px 13px;
+    }
+    
+    .blog {
+        padding: 50px 13px 0 13px;
+    }
+    .course-item {
+        margin-bottom: 25px;
+    }
+    
+    .faqs {
+        padding: 50px 0 0 0;
+    }
+    .row-faqs div {
+        margin-bottom: 50px;
+    }
+    .row-faqs {
+        margin: 0;
+        padding: 0 13px;
+    }
+    
+    .row > .feedback-form {
+        padding: 25px;
+        padding-bottom: 50px;
+    }
+    .map-wrap iframe {
+        height: 500px;
+    }
+    
+    .client-wrap {
+        margin: 0;
+        padding: 0 0 50px 0
+    }
+    
+    .admition-area * {
+        text-align: center;
+        align-items: center;
+    }
+    .admition-area p {
+        margin-bottom: 30px;
+    }
+    .admition-area h3 {
+        font-size: 20px;
+    }
+    
+    .footer-area .footer-logo {
+        display: table;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .footer-area * {
+        text-align: center;
+    }
+    .footer-area p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .footer-area ul {
+        padding: 0;
+    }
+    .footer-area .ul-footer {
+        padding-bottom: 50px;
+    }
+    .subscriber-form-wrap {
+        text-align-last: left;
+    }
+    .subscriber-form-wrap form button {
+        padding-left: 4.5%;
+    }
+}
