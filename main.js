@@ -89,4 +89,62 @@ $(document).ready(function() {
         if (moveMouse == true) {nextSlide();} 
         else if (moveMouse == false) {prevSlide();}
     };
+
+
+
+    if (window.innerWidth <= 900) {
+        $('.course-list').slick({
+            speed: 300,
+            slidesToShow: 1,
+            autoplay: true,
+            slidesToScroll: 1,
+        });
+        $('.scroll-1').slick({
+            dots: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            prevArrow: '<a class="arrow-slider" aria-label="" type="button"><i class="fa-solid fa-angle-left"></i></a>',
+            nextArrow: '<a class="arrow-slider" aria-label="" type="button"><i class="fa-solid fa-angle-right"></i></a>',
+        });
+        $('.client-wrap').slick({
+            speed: 300,
+            slidesToShow: 2,
+            autoplay: true,
+            slidesToScroll: 1,
+        });
+    } else {
+        $('.course-list').slick({
+            speed: 300,
+            slidesToShow: 4,
+            autoplay: true,
+            slidesToScroll: 1,
+        });
+        $('.scroll-1').slick({
+            dots: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: true,
+            prevArrow: '<a class="arrow-slider" aria-label="" type="button"><i class="fa-solid fa-angle-left"></i></a>',
+            nextArrow: '<a class="arrow-slider" aria-label="" type="button"><i class="fa-solid fa-angle-right"></i></a>',
+        });
+        $('.client-wrap').slick({
+            speed: 300,
+            slidesToShow: 5,
+            autoplay: true,
+            slidesToScroll: 1,
+        });
+    }
+
+  const menu = $('.navbar');
+    $(window).scroll(function() {
+        $(menu).addClass('active');
+        if (window.pageYOffset <= 25 || document.documentElement.scrollTop <= 25) {  $(menu).removeClass('active');};
+    
+    });
 });
+
+
+

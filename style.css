@@ -60,12 +60,12 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 999;
+
 }
 .nav-brand {
     float: left;
     height: 50px;
-    padding: 15px 15px;
+    padding: 0px 15px;
     font-size: 18px;
     line-height: 20px;
     margin-left: -15px;
@@ -80,6 +80,68 @@ a {
 .nav .active a {
     color: #1393EC;
 }
+.nav a:hover {
+    color: #1393EC;
+}
+.header-top-area {
+    position: fixed;
+}
+.navbar.active {
+    background: #292929;
+    transition: all 0.4s ease 0s; 
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+  
+}
+.navbar {
+    transition: all 0.4s ease 0s; 
+ 
+}
+
+.header-burger {display: none;}
+
+@media only screen and (max-width: 767px){
+    .navbar.active {height: 80px;}
+    .header-top-area::before {
+       
+    }
+    .header-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-right: 25px;
+    }
+    .nav-brand {padding-left: 25px;}
+    .header-burger::after,
+    .header-burger::before {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .header-burger::after {top: 0;}
+    .header-burger span {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+    }
+    .header-burger::before {bottom: 0;}
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+        background: #c2c2c2;
+     
+    }
+}
+
 /* БАННЕР-СЛАЙДЕР */
 .welcome-wrapper {width: 100%;}
 .welcome-slider-area {
@@ -95,7 +157,7 @@ a {
     background-color: #313131c0;
 }
 .welcome-single-slide {
-    height: 700px;
+    height: 900px;
 }
 .welcone-slide-1 {background: url(./img/header/welcome-1.jpg) no-repeat 50% 50%; background-size: cover;}
 .welcone-slide-2 {background: url(./img/header/welcome-2.jpg) no-repeat 50% 50%; background-size: cover;}
@@ -103,7 +165,7 @@ a {
 .button-wrapper {
     display: grid;
     position: absolute;
-    top: 35%;
+    top: 45%;
     right: 5%;
 }
 .button-wrapper button {
@@ -211,7 +273,7 @@ a {
 }
 /* Секция FACTS */
 .facts-area {
-    background: url(/img/fact-bg.jpg);
+    background: url(./img/fact-bg.jpg);
 }
 .facts-area-padding {
     padding: 100px 0 70px 0;  
@@ -245,6 +307,7 @@ a {
     margin-bottom: 20px;
 }
 .course-item {
+    margin: 15px;
     border-radius: 10px;
     box-shadow: 0 9px 9px 0 #c7c7c7;
 }
@@ -331,7 +394,25 @@ a {
 /* СТРАНИЦА РЕКОМЕНДАЦИИ (ОТЗЫВЫ) */
 .testmonial {
     background-color: #f8faff;
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
+}
+.testmonial .slick-arrow {
+    color: #434342;
+    font-size: 22px;
+    margin: auto 20px;
+    opacity: 0.7;
+}
+.testmonial .slick-arrow:hover {
+    opacity: 1;
+}
+.testmonial-wrapper {display: flex;}
+.wrap-item {
+    display: flex;
+    width: 100%;
+}
+.testmonial-item {
+    display: table-cell;
+    padding: 0 15px 50px 15px;
 }
 .testmonial h2 {
     text-align: center;
@@ -360,6 +441,7 @@ a {
 .testmonial-item a:hover {
     color: #1393EC;
 }
+
 /* СЕКЦИЯ БЛОГ */
 .blog {
     padding-top: 100px;
